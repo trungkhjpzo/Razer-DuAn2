@@ -1,0 +1,58 @@
+*{margin:0; padding:0}
+
+body{font-family:Arial, Helvetica, sans-serif; font-size:11px; background:#fafafa; overflow-x:hidden; padding:30px 0}
+body#home{overflow:hidden; position:fixed; width:100%}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+
+.left{float:left}
+.right{float:right}
+.clear{clear:both}
+
+#header{position:absolute; top:0; left:0; right:0; min-width:860px; height:30px; padding:0 50px; background:#000000; border-bottom:1px solid white; z-index:9999}
+
+#main-menu, #main-menu ul{list-style:none}
+#main-menu>li:not(.logo){display:inline-block; position:relative; margin-left:-3px; border-right:1px solid #AAAAAA}
+
+.logo{display:inline-block}
+.logo a{display:inline-block; padding:5px 15px}
+.logo img{width:20px; margin-bottom:-6px}
+
+#main-menu>li:last-child{border-right:0}
+#main-menu>li:nth-child(2){border-left:1px solid #AAAAAA}
+#main-menu>li:not(.logo)>a{display:inline-block; padding:0 12px; line-height:30px; text-decoration:none; color:#AAAAAA}
+#main-menu li:not(.logo):hover>a, #main-menu .active a{background:#1d1d1d; color:#00ff01}
+#main-menu ul{display:none; position:absolute; top:30px; left:-1px; width:200px; padding:10px 0 15px 0; background:#1d1d1d; border:1px solid white}
+#main-menu ul li a{display:block; padding:5px 15px; color:white;}
+#main-menu ul li a:hover{background:#3d3d3d; text-decoration:none}
+
+#menu>div>a{display:inline-block; padding:0 12px; line-height:30px; text-decoration:none; color:#AAAAAA}
+#menu>div>a>span{font-weight:bold; font-size:12px}
+#menu>div>a:hover{background:#1d1d1d; color:#00ff01}
+
+/*Contact*/
+#contact{position:fixed; top:-9999px; left:50%; transition:top 0.5s; width:360px; padding:20px; margin-left:-201px; background:white; color:black; border:1px solid black; z-index:9999}
+#contact:target{top:50%; margin-top:-201px}
+#contact a{position:absolute; top:20px; right:20px; display:block; width:24px; height:24px; background:url(../images/close.png)}
+#contact div p{line-height:20px; font-size:11px}
+#contact div p span{display:inline-block; width:150px; font-weight:bold}
+#contact form{margin-top:20px}
+#contact form input[type="text"], #contact form textarea{width:340px; height:20px; margin:5px 0; padding:0 10px; font-size:11px}
+#contact form textarea{height:60px; font-family:Arial; font-size:11px}
+#contact form input[type="submit"]{width:362px; height:35px; margin-top:5px; background:#EFEFEF; border:1px solid black}
+#contact form input[type="submit"]:hover{background:white}
+
+/*Log in*/
+#login{position:fixed; top:-9999px; left:50%; transition:top 0.5s; width:360px; padding:20px margin-left:-201px; background:white; color:black; border:1px solid black; z-index:9999}
+#login:target{top:50%; margin-top:-201px}
+#login a{position:absolute; top:20px; right:20px; display:block; width:24px; height:24px; background:url(../images/close.png)}
+#login div p{line-height:20px; font-size:11px;}
+
+#footer{position:fixed; bottom:0; left:0; right:0; min-width:860px; padding:0 50px; background:#000000; border-top:1px solid white; color:#aaaaaa;}
+#footer a{display:inline-block; padding:0 15px; line-height:30px; color:#aaaaaa;}
+#footer a:hover{color:#00ff01; text-decoration:none}
+
+/*Home*/
+#content{min-width:960px}
+
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<link href="css/jquery-ui-1.10.4.custom.min.css" rel="stylesheet"/>
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+<script>
+  $(function() {
+    $( "#tabs" ).tabs();
+  });
+  </script>
+</head>
+<body>
+	
+	<header>
+    	<p>Welcome Admin <span>|</span> <a href="#">Change password</a> <span>|</span> <a href="#">Log out</a></p>
+    </header>
+    <section>
+    	<aside>
+        	<nav>
+            	<ul>
+                	<li><a href="#">Homepage</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Orders</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <article>
+        	<h2>Order</h2>
+           		<div id="tabs">
+                	<ul>
+                    	<li><a href="#tabs-1">Hóa đơn chưa xử lý</a></li>
+                        <li><a href="#tabs-2">Hóa đơn đã xử lý</a></li>
+                        <li><a href="#tabs-3">Hóa đơn bị hủy</a></li>
+                    </ul>
+                    <div id="tabs-1">
+                    	<table>
+                        	<tr>
+                            	<th>Order ID</th>
+                                <th>Urder ID</th>
+                                <th colspan="2">Order Date</th>
+                            </tr>
+                            <tr>
+                            	<td colspan="4">Chưa có hóa đơn nào</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="tabs-2">
+                    	<table>
+                        	<tr>
+                            	<th>Order ID</th>
+                                <th>Urder ID</th>
+                                <th>Order Date</th>
+                            </tr>
+                            <tr>
+                            	<td colspan="4">Chưa có hóa đơn nào</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="tabs-3">
+                    	<table>
+                        	<tr>
+                            	<th>Order ID</th>
+                                <th>Urder ID</th>
+                                <th>Order Date</th>
+                            </tr>
+                            <tr>
+                            	<td colspan="4">Chưa có hóa đơn nào</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+              	
+        </article>
+    </section>
+    <footer>
+    	<address>Copyright @ 2014, Trần Đình Trung</address>
+    </footer>
+</body>
+</html>

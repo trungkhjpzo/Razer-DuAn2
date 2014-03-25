@@ -1,0 +1,52 @@
+*{margin:0; padding:0}
+ 
+body{font-family:Arial, Helvetica, sans-serif; font-size:11px; background:#fafafa; overflow-x:hidden; padding:30px 0}
+body#home{overflow:hidden}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+ 
+.left{float:left}
+.right{float:right}
+.clear{clear:both}
+ 
+#header{
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        min-width:960px;
+        height:30px;
+        padding:0 50px 0 140px;
+        background: 50px center no-repeat, #000000; z-index:9999}
+ 
+#main-menu, #main-menu ul{list-style:none}
+#main-menu>li:not(.logo){
+        display:inline-block;
+        position:relative;
+        margin-left:-3px;
+        border-right:1px solid }
+       
+.logo{display:inline-block; }
+ 
+#main-menu>li:last-child{border-right:0}
+#main-menu>li:not(.logo)>a{
+        display:inline-block;
+        padding:0 12px;
+        line-height:30px;
+        text-decoration:none;
+        color:#AAAAAA;}
+#main-menu li:hover>a, #main-menu .active a{background:black; color:#00ff01}
+#main-menu ul{display:none; position:absolute; top:30px; left:0; width:200px; padding:10px 0 15px 0; background:none}
+#main-menu ul li a{display:block; padding:5px 15px; color:#00ff01;}
+#main-menu ul li a:hover{background:url(../images/li_symbol.png); text-decoration:none}
+ 
+#menu>a{display:inline-block; padding:0 12px; line-height:30px; text-decoration:none; color:#AAAAAA}
+#menu>a>span{font-weight:bold; font-size:12px}
+#menu>a:hover{background:black; color:#00ff01}
+ 
+#footer{position:fixed; bottom:0; left:0; right:0; min-width:960px; padding:0 50px; background:#000000; color:#aaaaaa;}
+#footer a{display:inline-block; padding:0 15px; line-height:30px; color:#aaaaaa;}
+#footer a:hover{color:#00ff01x  ; text-decoration:none}
+ 
+/*Home*/
+#content{min-width:960px}
