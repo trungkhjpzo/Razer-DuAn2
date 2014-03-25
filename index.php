@@ -22,9 +22,11 @@
         <div id="content">
             <div id="slider">
                 <ul class="bxslider">
-                    <li><img src="images/maxresdefault.jpg" /></li>
-                    <li><img src="images/razer-hd-61537.jpg" /></li>
-                    <li><img src="images/razer-ouroboros.jpg" /></li>
+                    <li><img src="images/slider/01.jpg" /></li>
+                    <li><img src="images/slider/02.jpg" /></li>
+                    <li><img src="images/slider/03.jpg" /></li>
+                    <li><img src="images/slider/04.jpg" /></li>
+                    <li><img src="images/slider/05.jpg" /></li>
                 </ul>
             </div>
             <?php include_once 'footer.php'; ?>
