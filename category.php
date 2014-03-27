@@ -3,24 +3,31 @@
     <head>
         <?php include_once 'head.php'; ?>
         <script type="text/javascript">
-            $(document).ready(function(){
-                // Bat dau slider
-                $('.bxslider').bxSlider({
-                    speed: 1000,
-                    auto: true,
-                    pause: 5000,
-                    controls: false,
-                    pager: false
-                });
-                // Ket thuc slider
-            });
+            function changeMarginProduct()
+            {
+                var wWidth = window.innerWidth;
+                var marginProduct = wWidth / 100;
+                $(".product").css("margin", marginProduct + "px 1%");
+            }
         </script>
         <title>Template</title>
     </head>
-    <body>
+    <body onload="changeMarginProduct()" onresize="changeMarginProduct()">
         <?php include_once 'header.php'; ?>
         <div id="content">
-            Content
+            <div id="category">
+                <div class="product left" name="product"></div>
+                <div class="product left" name="product"></div>
+                <div class="product left" name="product"></div>
+                <div class="product left" name="product"></div>
+                <div class="product left" name="product"></div>
+                <div class="product left" name="product"></div>
+                <div class="product left" name="product"></div>
+                <div class="product left" name="product"></div>
+                <div class="product left" name="product"></div>
+                <div class="product left" name="product"></div>
+                <div class="clear"></div>
+            </div>
             <?php include_once 'footer.php'; ?>
         </div>
     </body>

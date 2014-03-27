@@ -13,13 +13,20 @@
                     <input type="text" name="txtPhone" id="txtPhone" placeholder="Phone:" parley-required="phone" />
                     <input type="text" name="txtTitle" id="txtTitle" placeholder="Tille (*):" parley-required="true" />
                     <textarea name="txtContent" parsley-required="true" placeholder="Content (*):" id="txtContent"></textarea>
-                    <input type="submit" id="btnSubmit" value="Gửi thông tin" />
+                    <input type="submit" id="btnSubmit" value="Send" />
                 </form>
             </div>
         <div id="login">
             <a href="#clear"></a>
             <form parsley-validate>
-                <p></p>
+                <p>User name</p>
+                <input type="text" name="txtUser" id="txtUser" placeholder="User name (*)">
+                <p>Password</p>
+                <input type="password" name="txtPass" id="txtPass" placeholder="Password (*)">
+                <input type="submit" id="btnLogin" value="Login">
+                <input type="reset" id="btnClear" value="Clear">
+                <p>Become a member of us ?</p>
+                <input type="button" name="btnRegister" id="btnRegister" value="Register">
             </form>
         </div>
         <div id="header">
